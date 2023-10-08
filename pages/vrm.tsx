@@ -51,8 +51,9 @@ export default function Model() {
           <ProgressBar max={+size} value={fetchedSize} />
         </ProgressBarContainer>
       ) : (
-        <Canvas flat>
-          <PerspectiveCamera makeDefault position={[-0.12, 1.2, 1.2]} />
+        <Canvas style={{ width: '424px', height: '507px' }} flat>
+        // アニメーションが正面を向いていないのでカメラで辻褄を合わせる
+          <PerspectiveCamera makeDefault rotation={[0, 0.23, 0]} position={[0, 1.25, 0.6]} />
           <Avator vrm={vrm} />
           <directionalLight />
         </Canvas>

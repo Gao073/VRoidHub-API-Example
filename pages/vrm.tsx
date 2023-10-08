@@ -52,7 +52,7 @@ export default function Model() {
         </ProgressBarContainer>
       ) : (
         <Canvas flat>
-          <PerspectiveCamera makeDefault position={[-0.12, 1, 4]} />
+          <PerspectiveCamera makeDefault position={[-0.12, 1.2, 1.2]} />
           <Avator vrm={vrm} />
           <directionalLight />
         </Canvas>

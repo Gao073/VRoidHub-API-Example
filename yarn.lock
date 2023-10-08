@@ -1084,39 +1084,39 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@charcoal-ui/foundation@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/foundation/-/foundation-3.1.0.tgz#1c0d8be0076843b6459babe7cd3327f03fe471a7"
-  integrity sha512-2YbeBSyHpAgc+lKWKPHTSnS65TPH8E1l67wfDkqM0sR1C9qzfsJ5e0OyldWkLpxZvYBZRIFIru2qP4I+zvSJrA==
-
 "@charcoal-ui/foundation@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@charcoal-ui/foundation/-/foundation-3.1.1.tgz#b1edd34842c84653a6eb3900ad4a2bee6221ab5c"
   integrity sha512-lsXdaqG/KoDFBcxhwFmDQQu4GZur0FnrjOgP7OYeMAX+pzktbHXgfvpaWHJtKMCwrmCkHzrv1QaCRwwiXbDYPw==
 
-"@charcoal-ui/icon-files@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/icon-files/-/icon-files-3.1.0.tgz#2d177fe6da7100c71a823cabdd0ddda0af82d496"
-  integrity sha512-Yhp4Hz80SfUUc6G4hTre55hzJ/EfR054ZboYZM39Mss0Wt5c6R6FgmO2JQHZKSSsp9hJ1xdjt7lCAIp8EfC5Aw==
+"@charcoal-ui/foundation@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/foundation/-/foundation-3.3.0.tgz#7a616daae1e9da8168e714d0e87cfcac293b215c"
+  integrity sha512-wcQWtrVZjwQ5c7iAF/d5dSJMtAZ2ej7ASQ6Nq09Lepo84lSINUuP4eSzWJiNLmIwkahThaSzsrbHBfkIdeMloQ==
 
-"@charcoal-ui/icons@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/icons/-/icons-3.1.0.tgz#2ad409cb5f717d54a8c2baa11476afede2163b2e"
-  integrity sha512-jcAOSMmtPE51chP4Qqx5a2x0UxvgcJUoVHUVwhlUS2LcO65SM1gYJ6gTk2oTX2N2hGzIR8XVsA2n7gNQ7mwKNw==
+"@charcoal-ui/icon-files@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/icon-files/-/icon-files-3.3.0.tgz#f86ec7e77ca2dc0a19f82e77a5e2bcd8d0350c18"
+  integrity sha512-guJieJ4xX7ame4e8FeLfI8eO8oTneCwyvxfD+92cqoeXntT+SnaKrCf+1dFNpJa93whkQtvCr8kCdt+Lwyab5A==
+
+"@charcoal-ui/icons@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/icons/-/icons-3.3.0.tgz#0551771446ff7cc9f7d58117048f0b18a3a6ce3f"
+  integrity sha512-3Ytjq1xMCoIOKKu917X3Mo1Hhng+5an0sewRNTzFtDKfVFR3x8AM6s/9Ps1TNQLU1C6cPeJ5xo7o74SU/+SKUA==
   dependencies:
-    "@charcoal-ui/icon-files" "^3.1.0"
+    "@charcoal-ui/icon-files" "^3.3.0"
     dompurify "^2.3.6"
     warning "^4.0.3"
 
-"@charcoal-ui/react@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/react/-/react-3.1.0.tgz#1b002f0670456843d21e4c3ff5ea80d69519545c"
-  integrity sha512-XhsFhzFew57ipOM4LGmvMlRIK4o56RkxJT/OvkGMN95Eq/8eGjhN/eQ56Lg62T9DgMDjWJIO7ACDn6GL8JcZtg==
+"@charcoal-ui/react@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/react/-/react-3.3.0.tgz#755ac523ebbfe34b2df8d6294cf1a6d4670005d5"
+  integrity sha512-9ia37rjiAwZU3CN6br1fVonY4lzqnMnKHBpLs+yfRjNNQf6kdAykvy0eximBSyC6cpQxCU+ySzCoYFXi3FJWdA==
   dependencies:
-    "@charcoal-ui/icons" "^3.1.0"
-    "@charcoal-ui/styled" "^3.1.0"
-    "@charcoal-ui/theme" "^3.1.0"
-    "@charcoal-ui/utils" "^3.1.0"
+    "@charcoal-ui/icons" "^3.3.0"
+    "@charcoal-ui/styled" "^3.3.0"
+    "@charcoal-ui/theme" "^3.3.0"
+    "@charcoal-ui/utils" "^3.3.0"
     "@react-aria/button" "^3.7.0"
     "@react-aria/checkbox" "^3.8.0"
     "@react-aria/dialog" "^3.5.0"
@@ -1136,16 +1136,6 @@
     react-stately "^3.19.0"
     warning "^4.0.3"
 
-"@charcoal-ui/styled@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/styled/-/styled-3.1.0.tgz#b117e4337ccac8deffec0e675fc092b3047eb14b"
-  integrity sha512-GO3LeVXRxIKb+AxdSn1nA08s3erxm5QyDLqFTcAtQovqNwsN/3/Hn+MD++s9AgZsJizuFmKGi4jWyEbYstm9yg==
-  dependencies:
-    "@charcoal-ui/foundation" "^3.1.0"
-    "@charcoal-ui/theme" "^3.1.0"
-    "@charcoal-ui/utils" "^3.1.0"
-    warning "^4.0.3"
-
 "@charcoal-ui/styled@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@charcoal-ui/styled/-/styled-3.1.1.tgz#2a834f460b26361079b52a71dc47b885eeecbf31"
@@ -1156,14 +1146,15 @@
     "@charcoal-ui/utils" "^3.1.1"
     warning "^4.0.3"
 
-"@charcoal-ui/theme@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/theme/-/theme-3.1.0.tgz#a6a3b31e821ab5516d3dce01d0c6a70bcc76e763"
-  integrity sha512-dDAzkUIDlOkQbQ9FC4A8XSFCZwSuZt7Ch9prwQGwHYFuFQW2FoCQYLOoHxG+wRDpUwyJ+wMnL8eu8+5zvZNo7g==
+"@charcoal-ui/styled@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/styled/-/styled-3.3.0.tgz#e853ab59dc7b2b0d51863c68af1791461ce2c771"
+  integrity sha512-p8zCwBa1/P4WsrhICEQfh+MNcPyuy5/07C9lXtaVb7VCPbIlXmuA5zBsDmrf6m0xxXi04TFkz9P7H7Sd/9jJPA==
   dependencies:
-    "@charcoal-ui/foundation" "^3.1.0"
-    "@charcoal-ui/utils" "^3.1.0"
-    polished "^4.1.4"
+    "@charcoal-ui/foundation" "^3.3.0"
+    "@charcoal-ui/theme" "^3.3.0"
+    "@charcoal-ui/utils" "^3.3.0"
+    warning "^4.0.3"
 
 "@charcoal-ui/theme@^3.1.1":
   version "3.1.1"
@@ -1174,12 +1165,13 @@
     "@charcoal-ui/utils" "^3.1.1"
     polished "^4.1.4"
 
-"@charcoal-ui/utils@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@charcoal-ui/utils/-/utils-3.1.0.tgz#c8b778805b0fb64ecb715e46cf8a8df0865210df"
-  integrity sha512-jNMB8bhSqWKQo9eJ9jgPMIX2AGiTCDjHV29nOuBPNn6fxafHw6yPMPuYVpL7dKkCeTzL1z3/iIF2kUefOQz+fg==
+"@charcoal-ui/theme@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/theme/-/theme-3.3.0.tgz#d5c65a19d027de099a282450f89988c4d9447227"
+  integrity sha512-4hDSLC/QPO3yQEm7mzFT/DbNCmKXX4+XkvisTfoZyIRJZnPD7E1s1PKwwPe5XM/qZZUwC+g8qEeMVkbP2Z4RlA==
   dependencies:
-    "@charcoal-ui/foundation" "^3.1.0"
+    "@charcoal-ui/foundation" "^3.3.0"
+    "@charcoal-ui/utils" "^3.3.0"
     polished "^4.1.4"
 
 "@charcoal-ui/utils@^3.1.1":
@@ -1188,6 +1180,14 @@
   integrity sha512-PXQOfkIIa8a7Fzhki4DYsu7dVJqWeV1TBcHOXvHvN9DmF8Zre6f7khydaP9wiZt+DJgAhKHARuBalmE4AK7hgA==
   dependencies:
     "@charcoal-ui/foundation" "^3.1.1"
+    polished "^4.1.4"
+
+"@charcoal-ui/utils@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@charcoal-ui/utils/-/utils-3.3.0.tgz#65845c441a71934e0077c0d6adc038d83e3fd784"
+  integrity sha512-Sa6bB0PWKiDWTbV+ROlUrG4Mcoz0N3Nyaq9HjMyNn1xaYTup2PPowEXN8+k5vpHh4MG9o/MreQkOUMplnYodbw==
+  dependencies:
+    "@charcoal-ui/foundation" "^3.3.0"
     polished "^4.1.4"
 
 "@chevrotain/cst-dts-gen@10.5.0":

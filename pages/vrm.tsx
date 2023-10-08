@@ -11,8 +11,18 @@ import { VRMAnimation } from '../lib/VRMAnimation/VRMAnimation';
 import * as THREE from 'three';
 import { VRM } from '@pixiv/three-vrm';
 import { useVRM } from '../lib/useVRM';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { PerspectiveCamera } from '@react-three/drei';
+
+function SceneSetup() {
+  const { scene } = useThree();
+
+  useEffect(() => {
+    scene.background = new THREE.Color('#f5f5f5');
+  }, [scene]);
+
+  return null;
+}
 
 export default function Model() {
   const router = useRouter();
@@ -52,11 +62,11 @@ export default function Model() {
         </ProgressBarContainer>
       ) : (
       <Canvas style={{ width: '424px', height: '507px' }} pixelRatio={window.devicePixelRatio} flat>
-        // アニメーションが正面を向いていないのでカメラで辻褄を合わせる
-          <PerspectiveCamera makeDefault rotation={[0, 0.23, 0]} position={[0, 1.25, 0.6]} />
-          <Avator vrm={vrm} />
-          <directionalLight />
-        </Canvas>
+        <PerspectiveCamera makeDefault rotation={[0, 0.23, 0]} position={[0, 1.25, 0.6]} />
+        <SceneSetup />
+        <Avator vrm={vrm} />
+        <directionalLight />
+      </Canvas>
       )}
       <ButtonContainer>
         <Button fullWidth variant="Primary" onClick={onClickBackToHome}>

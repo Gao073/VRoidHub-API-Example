@@ -10,7 +10,21 @@ import * as THREE from 'three';
 import { VRM } from '@pixiv/three-vrm';
 import { useVRM } from '../lib/useVRM';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera, Text } from '@react-three/drei';
+
+const AuthorInfo = ({ vrm, cameraPositionY }) => {
+  return (
+    <Text
+      anchorX="left"
+      position={[-0.26, cameraPositionY + 0.185, 0.2]}
+      rotation={[0, 0.23, 0]}
+      fontSize={0.02}
+      color="black"
+    >
+      {`@${vrm.meta.author}`}
+    </Text>
+  );
+};
 
 function SceneSetup() {
   const { scene } = useThree();
@@ -76,6 +90,13 @@ export default function Model() {
     return [0, size.y * 0.85, 0.6]; // Adjust the camera position based on the model's height
   }, [vrm]);
 
+    const cameraPositionY = useMemo(() => {
+    if (!vrm) return 1.25;
+    const box = new THREE.Box3().setFromObject(vrm.scene);
+    const size = box.getSize(new THREE.Vector3());
+    return size.y * 0.85;
+  }, [vrm]);
+
   useLayoutEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -107,6 +128,7 @@ export default function Model() {
           <SceneSetup />
           <Avator vrm={vrm} />
           <directionalLight />
+          {vrm && <AuthorInfo vrm={vrm} cameraPositionY={cameraPositionY} />}
         </Canvas>
       )}
       <ButtonContainer>

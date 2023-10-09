@@ -9,8 +9,21 @@ import { VRMAnimation } from '../lib/VRMAnimation/VRMAnimation';
 import * as THREE from 'three';
 import { VRM } from '@pixiv/three-vrm';
 import { useVRM } from '../lib/useVRM';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber';
 import { PerspectiveCamera, Text } from '@react-three/drei';
+
+
+const ExternalImage = ({ imageUrl, cameraPositionY }) => {
+  const texture = useLoader(THREE.TextureLoader, imageUrl);
+  texture.minFilter = THREE.LinearFilter;
+
+  return (
+    <mesh position={[0, cameraPositionY - 0.09, 0.3]} rotation={[0, 0.23, 0]}>
+      <planeGeometry args={[0.08, 0.08]} />
+      <meshBasicMaterial map={texture} />
+    </mesh>
+  );
+};
 
 const AuthorInfo = ({ vrm, cameraPositionY }) => {
   return (
@@ -129,6 +142,7 @@ export default function Model() {
           <Avator vrm={vrm} />
           <directionalLight />
           {vrm && <AuthorInfo vrm={vrm} cameraPositionY={cameraPositionY} />}
+          <ExternalImage imageUrl="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hub.vroid.com/characters/5767127652961291349/models/128980381975742254" cameraPositionY={cameraPositionY}/>
         </Canvas>
       )}
       <ButtonContainer>

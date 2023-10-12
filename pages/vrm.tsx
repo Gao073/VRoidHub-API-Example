@@ -149,7 +149,7 @@ export default function Model() {
       )}
       <ButtonContainer>
         <Button fullWidth variant="Primary" onClick={onClickBackToHome}>
-          ID:{character_id}, キャラクター選択に戻る
+          キャラクター選択に戻る
         </Button>
       </ButtonContainer>
     </div>

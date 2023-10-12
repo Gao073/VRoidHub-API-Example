@@ -1,5 +1,6 @@
 export type ModelData = {
   id: string;
+  characterId: string;
   characterName: string;
   modelName: string;
   portraitImageUrl: string;

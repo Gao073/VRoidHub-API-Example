@@ -72,8 +72,8 @@ const EachModel = ({ model }: { model: ModelData }) => {
   }, [setIsOpen]);
 
   const handleClickUseModel = useCallback(
-    () => router.push(`/vrm?id=${model.id}&size=${model.originalFileSize}`),
-    [router, model.id, model.originalFileSize],
+    () => router.push(`/vrm?id=${model.id}&size=${model.originalFileSize}&size=${model.originalFileSize}&character_id=${model.characterId}`),
+    [router, model.id, model.originalFileSize, model.characterId],
   );
 
   const handleClickMoralAgreed = useCallback((value: boolean) => setIsMoralAgreed(() => value), [setIsMoralAgreed]);
@@ -146,6 +146,7 @@ const EachModel = ({ model }: { model: ModelData }) => {
             <LicenseRow style={model.license.modification ? 'ok' : 'ng'} title="改変" />
             <LicenseRow style={model.license.redistribution ? 'ok' : 'ng'} title="再配布" />
             <LicenseRow style="info" title="クレジット表示" value={model.license.credit ? '不要' : '必要'} />
+            <p>キャラクターID : {model.characterId}</p>
           </LicenseContainer>
 
           {/* モーダルフッター部分 */}

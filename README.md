@@ -1,4 +1,8 @@
-# VRoid Hub API Example
+# VRoid Hub API Example Gao Sandbox
+
+## はじめに
+このリポジトリは下記のリポジトリをフォークして作成しました
+[VRoidHub-API-Example](https://github.com/pixiv/VRoidHub-API-Example)
 
 ## 目次
 

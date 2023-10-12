@@ -49,6 +49,7 @@ export const normalizeCharacterModel = (model: CharacterModelSerializer) => {
 
   return {
     id: model.id,
+    characterId: model.character.id,
     characterName: model.character.name,
     modelName: model.name,
     portraitImageUrl: model.portrait_image.w600.url,

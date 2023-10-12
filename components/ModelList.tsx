@@ -72,8 +72,8 @@ const EachModel = ({ model }: { model: ModelData }) => {
   }, [setIsOpen]);
 
   const handleClickUseModel = useCallback(
-    () => router.push(`/vrm?id=${model.id}&size=${model.originalFileSize}`),
-    [router, model.id, model.originalFileSize],
+    () => router.push(`/vrm?id=${model.id}&size=${model.originalFileSize}&size=${model.originalFileSize}&character_id=${model.characterId}`),
+    [router, model.id, model.originalFileSize, model.characterId],
   );
 
   const handleClickMoralAgreed = useCallback((value: boolean) => setIsMoralAgreed(() => value), [setIsMoralAgreed]);

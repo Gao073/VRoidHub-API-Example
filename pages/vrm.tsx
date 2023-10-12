@@ -88,7 +88,7 @@ const Avator = ({ vrm }: { vrm: VRM }) => {
 
 export default function Model() {
   const router = useRouter();
-  const { id, size } = router.query;
+  const { id, size, character_id} = router.query;
   const rootRef = useRef<HTMLDivElement | null>(null);
   const { vrm, fetchedSize } = useVRM(id as string);
 
@@ -142,12 +142,14 @@ export default function Model() {
           <Avator vrm={vrm} />
           <directionalLight />
           {vrm && <AuthorInfo vrm={vrm} cameraPositionY={cameraPositionY} />}
-          <ExternalImage imageUrl="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hub.vroid.com/characters/5767127652961291349/models/128980381975742254" cameraPositionY={cameraPositionY}/>
+          <ExternalImage
+          imageUrl={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hub.vroid.com/characters/${character_id}/models/${id}`}
+          cameraPositionY={cameraPositionY}/>
         </Canvas>
       )}
       <ButtonContainer>
         <Button fullWidth variant="Primary" onClick={onClickBackToHome}>
-          キャラクター選択に戻る
+          ID:{character_id}, キャラクター選択に戻る
         </Button>
       </ButtonContainer>
     </div>
